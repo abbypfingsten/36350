@@ -18,3 +18,8 @@ model_select = function(covariates, responses, cutoff){
     return(c())
 }
 
+
+run_simulation = function(n_trials, n, p, cutoff){
+  data = model_select(covariates, responses, cutoff)
+  histogram(data)
+}
