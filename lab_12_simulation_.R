@@ -23,3 +23,9 @@ run_simulation = function(n_trials, n, p, cutoff){
   data = model_select(covariates, responses, cutoff)
   histogram(data)
 }
+
+save(low.covariate.regress, file = "pvals.RData")
+
+makeplot = function(datapath){
+  plot(datapath)
+}
